@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "PMDM_Practica3_Avatar"

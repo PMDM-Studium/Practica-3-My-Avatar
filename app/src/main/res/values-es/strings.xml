@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Avatar</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_crear">Crear</string>
+    <string name="dlg_guardado">Dato Guardado</string>
+    <string name="dlg_cancelado">Cancelar</string>
+    <string name="dlg_crear">Crear Avatar</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtSexo">Sexo</string>
+    <string name="txtRaza">Raza</string>
+    <string name="txtProfesion">Profesión</string>
+    <string name="rdHombre">Hombre</string>
+    <string name="rdMujer">Mujer</string>
+    <string name="lblEspecie">Raza:</string>
+    <string name="lblProfecion">Profesión:</string>
+    <string name="txtVida">Vida</string>
+    <string name="txtMagia">Magia</string>
+    <string name="txtFuerza">Fuerza</string>
+    <string name="txtVelocidad">Velocidad</string>
+    <string-array name="despegableEspecie">
+        <item>Humano</item>
+        <item>Elfo</item>
+        <item>Enano</item>
+        <item>Hobit</item>
+    </string-array>
+    <string-array name="despegableProfesion">
+        <item>Arquero</item>
+        <item>Gerrero</item>
+        <item>Mago</item>
+        <item>Herrero</item>
+        <item>Minero</item>
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="lblPrincipal">
+        <item name="android:textColor">@color/rojo</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="lblSecundario">
+        <item name="android:textColor">@color/verde</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="txtPrimario">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <style name="txtSecundario">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">60dp</item>
+    </style>
+    <style name="boton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>
