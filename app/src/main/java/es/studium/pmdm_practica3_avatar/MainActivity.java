@@ -81,19 +81,23 @@ public class MainActivity extends AppCompatActivity implements Interfaz, View.On
     }
     @Override
     public void onDataSetNombre(String nombre) {
+        //Toast.makeText(this, "nombre: "+nombre, Toast.LENGTH_SHORT).show();
         Nombre=nombre;
     }
     @Override
     public void onDataSetSexo(String sexo) {
+        //Toast.makeText(this, "sexo: "+sexo, Toast.LENGTH_SHORT).show();
         Sexo=sexo;
     }
     @Override
     public void onDataSetEspecie(String especie) {
+        //Toast.makeText(this, "especie: "+especie, Toast.LENGTH_SHORT).show();
         Especie=especie;
 
     }
     @Override
     public void onDataSetProfesion(String profesion) {
+        //Toast.makeText(this, "profesion: "+profesion, Toast.LENGTH_SHORT).show();
         Profesion=profesion;
         //Rellenamos los datos
         txtNombre.setText(Nombre);
