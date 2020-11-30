@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/fondo"
     tools:context=".MainActivity">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,6 +50,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
+                        android:freezesText="true"
                         android:inputType="textPersonName" />
 
                     <TextView
@@ -66,6 +66,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
+                        android:freezesText="true"
                         android:inputType="textPersonName" />
 
                     <TextView
@@ -81,6 +82,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
+                        android:freezesText="true"
                         android:inputType="textPersonName" />
 
                     <TextView
@@ -96,6 +98,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
+                        android:freezesText="true"
                         android:inputType="textPersonName" />
                 </LinearLayout>
 
@@ -122,78 +125,91 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.15">
 
-                <LinearLayout
-                    android:layout_width="195dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/lblVida"
-                        style="@style/lblSecundario"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/txtVida" />
+                        android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/txtVida"
-                        style="@style/txtSecundario"
+                        <TextView
+                            android:id="@+id/lblVida"
+                            style="@style/lblSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtVida" />
+
+                        <EditText
+                            android:id="@+id/txtVida"
+                            style="@style/txtSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:freezesText="true"
+                            android:inputType="textPersonName" />
+
+                        <TextView
+                            android:id="@+id/lblMagia"
+                            style="@style/lblSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtMagia" />
+
+                        <EditText
+                            android:id="@+id/txtMagia"
+                            style="@style/txtSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:freezesText="true"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.15">
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/lblMagia"
-                        style="@style/lblSecundario"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/txtMagia" />
+                        <TextView
+                            android:id="@+id/lblFuerza"
+                            style="@style/lblSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtFuerza" />
 
-                    <EditText
-                        android:id="@+id/txtMagia"
-                        style="@style/txtSecundario"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
-                </LinearLayout>
+                        <EditText
+                            android:id="@+id/txtFuerza"
+                            style="@style/txtSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:freezesText="true"
+                            android:inputType="textPersonName" />
 
-                <LinearLayout
-                    android:layout_width="181dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/lblVelocidad"
+                            style="@style/lblSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtVelocidad" />
 
-                    <TextView
-                        android:id="@+id/lblFuerza"
-                        style="@style/lblSecundario"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/txtFuerza" />
-
-                    <EditText
-                        android:id="@+id/txtFuerza"
-                        style="@style/txtSecundario"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
-
-                    <TextView
-                        android:id="@+id/lblVelocidad"
-                        style="@style/lblSecundario"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/txtVelocidad" />
-
-                    <EditText
-                        android:id="@+id/txtVelocidad"
-                        style="@style/txtSecundario"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
-                </LinearLayout>
+                        <EditText
+                            android:id="@+id/txtVelocidad"
+                            style="@style/txtSecundario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:freezesText="true"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
