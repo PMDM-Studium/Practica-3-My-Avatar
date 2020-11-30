@@ -94,17 +94,21 @@ public class MainActivity extends AppCompatActivity implements Interfaz, View.On
     }
     @Override
     public void onDataSetProfesion(String profesion) {
-        Profesion=profesion;
+        Profesion = profesion;
         //Rellenamos los datos
         txtNombre.setText(Nombre);
         txtSexo.setText(Sexo);
         txtEspecie.setText(Especie);
         txtProfesion.setText(Profesion);
         //Damos los valores aleatorios
-        txtVida.setText(""+aleatorio.nextInt(100-1));
-        txtMagia.setText(""+aleatorio.nextInt(10 - 1));
-        txtFuerza.setText(""+aleatorio.nextInt(20-1));
-        txtVelocidad.setText(""+aleatorio.nextInt(5 - 1));
+        txtVida.setText("" + aleatorio.nextInt(100 - 1));
+        txtMagia.setText("" + aleatorio.nextInt(10 - 1));
+        txtFuerza.setText("" + aleatorio.nextInt(20 - 1));
+        txtVelocidad.setText("" + aleatorio.nextInt(5 - 1));
+        imagenAvatar(Sexo,Especie);
+        imagenProfesion(Profesion);
+    }
+    public void imagenAvatar(String Sexo,String Especie){
         //Comprobamos el sexo y la raza para poner la imagen
         if((Sexo.equals("Hombre"))||Sexo.equals("Men")) {
             if ((Especie.equals("Humano"))||(Especie.equals("Human"))) {
@@ -125,12 +129,16 @@ public class MainActivity extends AppCompatActivity implements Interfaz, View.On
                 imgAvatar.setImageResource(R.drawable.elfo_mujer);
             } else if (Especie.equals("Hobbit")) {
                 imgAvatar.setImageResource(R.drawable.hobbit_mujer);
+            }else {
+                imgAvatar.setImageResource(R.drawable.sinidentificar);
             }
         }
+    }
+    public void imagenProfesion(String Profesion){
         //Comprobamos la profesion eligida  para poner la imagen
         if ((Profesion.equals("Arquero"))||(Profesion.equals("Archer"))){
             imgProfesion.setImageResource(R.drawable.arquero);
-        }else if ((profesion.equals("Guerrero"))||(Profesion.equals("Warrior"))){
+        }else if ((Profesion.equals("Guerrero"))||(Profesion.equals("Warrior"))){
             imgProfesion.setImageResource(R.drawable.guerrero);
         }else if ((Profesion.equals("Mago"))||(Profesion.equals("Mage"))){
             imgProfesion.setImageResource(R.drawable.mago);
@@ -138,6 +146,8 @@ public class MainActivity extends AppCompatActivity implements Interfaz, View.On
             imgProfesion.setImageResource(R.drawable.herrero);
         }else if ((Profesion.equals("Minero"))||(Profesion.equals("Miner"))){
             imgProfesion.setImageResource(R.drawable.minero);
+        }else {
+            imgProfesion.setImageResource(R.drawable.sin_definir);
         }
     }
 }
