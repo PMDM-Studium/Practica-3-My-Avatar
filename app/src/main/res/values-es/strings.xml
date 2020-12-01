@@ -23,7 +23,7 @@
         <item>Humano</item>
         <item>Elfo</item>
         <item>Enano</item>
-        <item>Hobit</item>
+        <item>Hobbit</item>
     </string-array>
     <string-array name="despegableProfesion">
         <item>Arquero</item>

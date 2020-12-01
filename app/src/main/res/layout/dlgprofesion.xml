@@ -6,7 +6,7 @@
         android:id="@+id/lblProfecion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblEspecie" />
+        android:text="@string/lblProfecion" />
 
     <Spinner
         android:id="@+id/spinnerProfecion"
